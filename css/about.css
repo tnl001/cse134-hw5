@@ -1,0 +1,137 @@
+body {
+    overflow-x: hidden;
+}
+
+@media (min-width: 1280px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        position: absolute;
+    }
+
+    main div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 100vh;
+        padding-left: 25vw;
+        padding-right: 25vw;
+        animation-name: pop-in;
+        animation-duration: 1.5s;
+    }
+
+    main>div:nth-child(even) {
+        background-color: black;
+        color: white;
+    }
+
+    main div p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: var(--about-main-content-width-widescreen);
+    }
+
+    main div picture {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: var(--about-main-content-width-widescreen);
+    }
+
+    img {
+        max-width: var(--about-image-max-width-bigscreen);
+        border-radius: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    main {
+        margin-top: var(--about-main-margin);
+        display: flex;
+        flex-direction: column;
+        width: var(--about-main-width);
+    }
+
+    main div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    main div p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: var(--about-main-content-width-widescreen);
+    }
+
+    main div picture {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: var(--about-main-content-width-widescreen);
+    }
+
+    img {
+        max-width: var(--about-image-max-width-widescreen);
+        border-radius: 100%;
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    main {
+        margin-top: var(--about-main-margin);
+        display: flex;
+        flex-direction: column;
+        width: var(--about-main-width-smallscreen);
+    }
+
+    main div:nth-child(1),
+    main div:nth-child(3) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main div:nth-child(2) {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    main div p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    main div picture {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: var(--about-main-width-smallscreen);
+    }
+
+    img {
+        max-width: var(--about-main-width-smallscreen);
+    }
+}
+
+@keyframes pop-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

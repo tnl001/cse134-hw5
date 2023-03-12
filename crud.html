@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CRUD</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cure53/DOMPurify/dist/purify.js"></script>
+    <script type="module" src="js/crud/blog.js"></script>
+    <style></style>
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
+</head>
+
+<body>
+    <header>
+        <h1>CRUD</h1>
+    </header>
+
+    <main>
+        <div id="blog-list"></div>
+        <button id="add-btn">Add</button>
+
+        <!-- Prompt dialog -->
+        <dialog id="add-prompt">
+            <form id="add-form" method="dialog">
+                <p>Post Title</p>
+                <input id="post-title" name="post-title" type="text">
+                <p>Post Date</p>
+                <input id="post-date" name="post-date" type="date">
+                <p>Post Summary</p>
+                <textarea id="post-sum" name="post-sum"></textarea>
+                <div>
+                    <button value="false">Cancel</button>
+                    <button id="post-submit" value="true">Submit</button>
+                </div>
+            </form>
+        </dialog>
+
+        <!-- Delete dialog -->
+        <dialog id="delete-prompt">
+            <form method="dialog">
+                <p>Delete blog?</p>
+                <div>
+                    <button id="delete-cancel" value="false">Cancel</button>
+                    <button id="delete-ok" value="true">OK</button>
+                </div>
+            </form>
+        </dialog>
+
+        <!-- Edit dialog -->
+        <dialog id="edit-prompt">
+            <form id="edit-form" method="dialog">
+                <p>Post Title</p>
+                <input id="post-title-edit" name="post-title-edit" type="text">
+                <p>Post Date</p>
+                <input id="post-date-edit" name="post-date-edit" type="date">
+                <p>Post Summary</p>
+                <textarea id="post-sum-edit" name="post-sum-edit"></textarea>
+                <div>
+                    <button id="edit-cancel" value="false">Cancel</button>
+                    <button id="edit-ok" value="true">Save</button>
+                </div>
+            </form>
+        </dialog>
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

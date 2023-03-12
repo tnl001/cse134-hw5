@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KVRG2YVS35"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-KVRG2YVS35');
+    </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contacts</title>
+    <script type="module" src="js/navBar.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/contacts.css">
+</head>
+
+<body>
+    <header>
+        <div id="hamburger-nav">
+            <button id="hamburger">
+            </button>
+        </div>
+        <div id="nav-background"></div>
+        <nav id="nav-bar">
+            <a href="/index.html">Home</a>
+            <a href="/about.html">About</a>
+            <a href="/experience.html">Experience</a>
+            <a href="/projects.html">Projects</a>
+            <a href="/contacts.html">Contacts</a>
+            <!-- <a href="/experiments.html">Experiments</a> -->
+        </nav>
+        <h1>Contacts</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>FAQ</h2>
+            <details>
+                <summary><span class="faq-ques">How old am I?</span></summary>
+                I'm 21 years young.
+            </details>
+            <details>
+                <summary><span class="faq-ques">How long have I been into coding?</span></summary>
+                Ever since I got my first computer, which was more than 10 years ago.
+            </details>
+            <details>
+                <summary><span class="faq-ques">What are you interested in?</span></summary>
+                Anything web-related. I like working on creating services that serve the front-end interactions. While I
+                also enjoy working on front-end stuff, I often use bootstrap in my projects and spend the
+                <em>majority</em> of the time playing around with the back-end. <aside>I usually thought to myself
+                    <i>Are you more into front-end or back-end?</i>, and the answer is usually back-end, but somehow
+                    working on front-end stuff is also extremely <em>satisfying.</em>
+                </aside>
+            </details>
+            <details>
+                <summary><span class="faq-ques">What are the top 5 jobs that you would be interested in?</span>
+                </summary>
+                <ol>
+                    <li>Software Developer</li>
+                    <li>Network Engineer</li>
+                    <li>Cloud Engineer</li>
+                    <li>Machine Learning Engineer</li>
+                    <li>Cybersecurity Analyst</li>
+
+                </ol>
+            </details>
+        </section>
+        <br />
+        <form>
+            <fieldset>
+                <legend>Please feel free to fill out the form below if you have any other question or want to discuss
+                    anything! </legend>
+
+                <div>
+                    <label for="fn">First name: </label>
+                    <input type="text" name="fn" id="fn" required>
+                </div>
+                <div>
+                    <label for="ln">Last name: </label>
+                    <input type="text" name="ln" id="ln" required>
+                </div>
+                <div>
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div>
+                    <label for="job">What is your occupation?:</label>
+                    <select id="job">
+                        <option value="na">N/A</option>
+                        <optgroup label="Tech.">
+                            <option value="software-dev">Software Developer</option>
+                            <option value="software-dev">Data Scientist</option>
+                            <option value="software-dev">Cybersecurity Analyst</option>
+                            <option value="software-dev">Network Engineer</option>
+                            <option value="ux-designer">UX-Designer</option>
+                        </optgroup>
+                        <optgroup label="Other">
+                            <option value="teacher">Teacher</option>
+                            <option value="student">Student</option>
+                            <option value="other">Other</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div>
+                    <label for="prog-lang-choice">Choose a favorite programming language:</label>
+                    <input list="prog-lang" id="prog-lang-choice" name="prog-lang-choice">
+
+                    <datalist id="prog-lang">
+                        <option value="N/A">
+                        <option value="Java">
+                        <option value="JavaScript">
+                        <option value="HTML">
+                        <option value="CSS">
+                        <option value="GoLang">
+                        <option value="C">
+                        <option value="C++">
+                    </datalist>
+                </div>
+                <div>
+                    <label for="question">Question: </label>
+                    <textarea id="question" name="question"></textarea>
+                </div>
+                <div id="submit-btn-div">
+                    <button id="submit-btn" type="submit" value="Send">Send</button>
+                </div>
+            </fieldset>
+        </form>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

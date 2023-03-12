@@ -1,0 +1,64 @@
+fieldset div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+fieldset label {
+    width: 40%;
+}
+
+fieldset input,
+fieldset select {
+    width: 50%;
+    height: 20px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+fieldset input:focus,
+fieldset select:focus,
+fieldset textarea:focus {
+    outline: none;
+}
+
+fieldset textarea {
+    width: 50%;
+    height: 150px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+#submit-btn-div {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row-reverse;
+    height: 30px;
+}
+
+
+
+@media (min-width: 768px) {
+    #submit-btn {
+        width: 50%;
+        background-color: white;
+        border: 1px solid black;
+    }
+
+    #submit-btn:hover {
+        background-color: black;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    #submit-btn {
+        width: 50%;
+        background-color: black;
+        border: 1px solid black;
+        color: white;
+    }
+}

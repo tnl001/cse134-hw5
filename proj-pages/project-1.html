@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KVRG2YVS35"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-KVRG2YVS35');
+    </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Project 1</title>
+    <script type="module" src="../js/navBar.js"></script>
+    <style></style>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/project-1.css">
+</head>
+
+<body>
+    <header>
+        <div id="hamburger-nav">
+            <button id="hamburger">
+            </button>
+        </div>
+        <div id="nav-background"></div>
+        <nav id="nav-bar">
+            <a href="/index.html">Home</a>
+            <a href="/about.html">About</a>
+            <a href="/experience.html">Experience</a>
+            <a href="/projects.html">Projects</a>
+            <a href="/contacts.html">Contacts</a>
+            <!-- <a href="/experiments.html">Experiments</a> -->
+        </nav>
+        <h1>Recipe Manager</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Project Description</h2>
+            <p>Implemented features for editing, deleting, viewing recipes using HTML, CSS, and JavaScript.
+                Polished User Interface for desktop and mobile versions using CSS. Built Netlify functions for API
+                calls and reduced API spamming by storing data in Netlify server’s local storage.</p>
+        </section>
+        <section>
+            <h2>Development Process</h2>
+            <p>The project spanned over 10 weeks. We spent around 6 weeks to research and design the layout of our
+                application. The last 4 weeks were divided into 2 sprints of development and 1 sprint of bug fixing.</p>
+        </section>
+        <section>
+            <h2>Code</h2>
+            <p>In this project, we also utilized various HTML tags such as <code>details</code>, <code>summary</code>,
+                <code>section</code>, etc. to create the front-end page. Here's some example JavaScript code that we
+                used in our project:
+            </p>
+            <pre>
+function addFav(data, favRecipeArray) {
+    favRecipeArray.push(data);
+    localStorage.setItem("favRecipeArray", JSON.stringify(favRecipeArray));
+}
+            </pre>
+            <p>This function adds a recipe to the Favorite list by first storing it inside an array and then storing the
+                array inside <code>localStorage</code>.</p>
+        </section>
+        <section>
+            <h2>Images</h2>
+            <p>Below are some figures of the final product:</p>
+            <br />
+            <figure>
+                <img src="/pics/fig-1.jpg" alt="Add Recipe Page">
+                <figcaption>Add a Recipe Page</figcaption>
+            </figure>
+            <figure>
+                <img src="/pics/fig-2.jpg" alt="View Recipe Page">
+                <figcaption>View a Recipe Page</figcaption>
+            </figure>
+
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

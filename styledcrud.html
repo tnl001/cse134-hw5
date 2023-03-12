@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KVRG2YVS35"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-KVRG2YVS35');
+    </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <title>Styled CRUD</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cure53/DOMPurify/dist/purify.js"></script>
+    <script type="module" src="js/styled-crud/styledBlog.js"></script>
+    <script type="module" src="js/navBar.js"></script>
+    <style></style>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/crud.css">
+</head>
+
+<body>
+    <header>
+        <div id="hamburger-nav">
+            <button id="hamburger">
+            </button>
+        </div>
+        <div id="nav-background"></div>
+        <nav id="nav-bar">
+            <a href="/index.html">Home</a>
+            <a href="/about.html">About</a>
+            <a href="/experience.html">Experience</a>
+            <a href="/projects.html">Projects</a>
+            <a href="/contacts.html">Contacts</a>
+            <!-- <a href="/experiments.html">Experiments</a> -->
+        </nav>
+        <h1>Styled CRUD</h1>
+    </header>
+
+    <main>
+        <div id="blog-list"></div>
+        <button id="add-btn"></button>
+
+        <!-- Prompt dialog -->
+        <dialog id="add-prompt">
+            <form id="add-form" method="dialog">
+                <h2>Add Blog</h2>
+                <p>Post Title</p>
+                <input id="post-title" name="post-title" type="text">
+                <p>Post Date</p>
+                <input id="post-date" name="post-date" type="date">
+                <p>Post Summary</p>
+                <textarea id="post-sum" name="post-sum"></textarea>
+                <div class="dialog-btn-container">
+                    <button id="post-submit" value="true">Submit</button>
+                    <button id="post-cancel" value="false">Cancel</button>
+                </div>
+            </form>
+        </dialog>
+
+        <!-- Delete dialog -->
+        <dialog id="delete-prompt">
+            <form method="dialog">
+                <p>Delete blog?</p>
+                <div class="dialog-btn-container">
+                    <button id="delete-ok" value="true">OK</button>
+                    <button id="delete-cancel" value="false">Cancel</button>
+                </div>
+            </form>
+        </dialog>
+
+        <!-- Edit dialog -->
+        <dialog id="edit-prompt">
+            <form id="edit-form" method="dialog">
+                <h2>Edit Blog</h2>
+                <p>Post Title</p>
+                <input id="post-title-edit" name="post-title-edit" type="text">
+                <p>Post Date</p>
+                <input id="post-date-edit" name="post-date-edit" type="date">
+                <p>Post Summary</p>
+                <textarea id="post-sum-edit" name="post-sum-edit"></textarea>
+                <div class="dialog-btn-container">
+                    <button id="edit-ok" value="true">Save</button>
+                    <button id="edit-cancel" value="false">Cancel</button>
+                </div>
+            </form>
+        </dialog>
+
+        <!-- Blog details dialog -->
+        <dialog id="detail-prompt">
+            <form id="detail-form" method="dialog">
+                <h2 id="blog-detail-title" tabindex="1" autofocus></h2>
+                <i id="blog-detail-date"></i>
+                <p id="blog-detail-summary"></p>
+                <div class="dialog-btn-container">
+                    <button id="detail-close" value="false"></button>
+                </div>
+            </form>
+        </dialog>
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

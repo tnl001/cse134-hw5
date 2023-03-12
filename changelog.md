@@ -1,0 +1,12 @@
+# Part 5 - Change Log
+- Removed unused `#hamburger hr` css rule
+- Used JavaScript for hamburger menu instead of CSS
+- Updated `About` page pictures, descriptions, and spacing
+- Updated `Home` page pictures, descriptions, and positioning of elements 
+- Added `pop-in` animation for `Home` and `About` page
+- Added more views positioning for differernt devices on `Home` page
+- Added `padding-bottom` for `Project` and `Experience` pages
+- Hide overflow scroll on x-axis
+- Moved the hamburger button into a nav-like div
+- Added Google Analytics script to `Home`, `About`, `Experience`, `Projects`, `Project 1`, and `Styled CRUD` pages
+  - Reason: to get an idea of how users interact with my website and how my website performs

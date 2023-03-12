@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiments</title>
+    <script></script>
+    <style></style>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <header>
+        <button id="hamburger">
+        </button>
+        <div id="nav-background"></div>
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/about.html">About</a>
+            <a href="/experience.html">Experience</a>
+            <a href="/projects.html">Projects</a>
+            <a href="/contacts.html">Contacts</a>
+            <!-- <a href="/experiments.html">Experiments</a> -->
+        </nav>
+        <h1>Experiments</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Welcome to the Experiments page!</h2>
+            <p>This page contains various HTML tags that I will use to showcase how they work.</p>
+            <br />
+            <p>List of tags:</p>
+            <ol>
+                <li>iframe</li>
+                <li>audio</li>
+                <li>video</li>
+                <li>canvas</li>
+                <li>svg</li>
+                <li>template</li>
+            </ol>
+        </section>
+        <section>
+            <h2>iframe</h2>
+            <p>Embded map of UCSD:</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.684544719803!2d-117.23620218443783!3d32.88006488603041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc06c4414caf4f%3A0xefb6aafc89913ea7!2sUniversity%20of%20California%20San%20Diego!5e0!3m2!1sen!2sus!4v1675045926882!5m2!1sen!2sus"></iframe>
+        </section>
+        <section>
+            <h2>audio</h2>
+            <p>Some frog sound:</p>
+            <audio controls src="/sound/frogSound.wav"></audio>
+        </section>
+        <section>
+            <h2>video</h2>
+            <p>People walking video:</p>
+            <video controls src="/video/people_walking.mp4"></video>
+        </section>
+        <section>
+            <h2>canvas</h2>
+            <p>Short canvas demo (just a canvas with a border):</p>
+            <canvas id="canvas-demo" style="border: 1px solid black;"></canvas>
+        </section>
+        <section>
+            <h2>svg</h2>
+            <p>This is to demo the inline usage:</p>
+            <svg>
+                <circle r="40" stroke="red" />
+            </svg>
+        </section>
+        <section>
+            <h2>template</h2>
+            <p>This template is currently not rendered. Once JavaScript is added, the content can appear.</p>
+            <template id="template-demo">
+                <p><em>I AM HIDDEN!</em></p>
+            </template>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

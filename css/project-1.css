@@ -1,0 +1,15 @@
+body {
+    overflow-x: hidden;
+}
+
+main {
+    padding-bottom: 40px;
+}
+
+img {
+    max-width: 100%;
+}
+
+pre {
+    white-space: pre-wrap;
+}

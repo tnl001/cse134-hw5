@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KVRG2YVS35"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-KVRG2YVS35');
+    </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projects</title>
+    <script type="module" src="js/navBar.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/projects.css">
+</head>
+
+<body>
+    <header>
+        <div id="hamburger-nav">
+            <button id="hamburger">
+            </button>
+        </div>
+        <div id="nav-background"></div>
+        <nav id="nav-bar">
+            <a href="/index.html">Home</a>
+            <a href="/about.html">About</a>
+            <a href="/experience.html">Experience</a>
+            <a href="/projects.html">Projects</a>
+            <a href="/contacts.html">Contacts</a>
+            <!-- <a href="/experiments.html">Experiments</a> -->
+        </nav>
+        <h1>Projects</h1>
+    </header>
+
+    <main>
+        <table>
+            <caption>Project Repository</caption>
+            <colgroup>
+                <col span="1" class="project-name">
+                <col span="1" class="project-date">
+                <col span="1" class="project-status">
+                <col span="1" class="project-text">
+            </colgroup>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Last Modified</th>
+                <th scope="col">Status</th>
+                <th scope="col">Description</th>
+            </tr>
+            <tr>
+                <td><a href="/proj-pages/project-1.html">Recipe Manager</a></td>
+                <td>12/11/2021</td>
+                <td>✅</td>
+                <td>Implemented features for editing, deleting, viewing recipes using HTML, CSS, and JavaScript.
+                    Polished User Interface for desktop and mobile versions using CSS. Built Netlify functions for API
+                    calls and reduced API spamming by storing data in Netlify server’s local storage.</td>
+            </tr>
+            <tr>
+                <td>Project 2</td>
+                <td>4/18/2021</td>
+                <td>✅</td>
+                <td>Created a waitlist application that allows users to add/clear guests based on their priority level.
+                    Designed the front-end using React.js and built the back-end using Express.js and PostgreSQL.</td>
+            </tr>
+            <tr>
+                <td>Project 3</td>
+                <td>9/18/2021</td>
+                <td>✅</td>
+                <td>Built a desktop application for employers to manage their employees’ information. Designed the GUI
+                    using Java and used H2 as the embedded database system.</td>
+            </tr>
+        </table>
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

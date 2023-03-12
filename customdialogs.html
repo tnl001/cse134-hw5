@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Custom Dialogs</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/cure53/DOMPurify/dist/purify.js"></script>
+    <script type="module" src="js/customDialogs.js"></script>
+    <style></style>
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
+</head>
+
+<body>
+    <header>
+        <h1>Custom Dialogs</h1>
+    </header>
+
+    <main>
+        <button id="alert-btn">Alert</button>
+        <button id="confirm-btn">Confirm</button>
+        <button id="prompt-btn">Prompt</button>
+        <br>
+        <br>
+        <hr>
+        <output></output>
+
+        <!-- Alert dialog -->
+        <dialog id="alert-dialog">
+            <form method="dialog">
+                <p>Alert pressed!</p>
+                <div>
+                    <button>OK</button>
+                </div>
+            </form>
+        </dialog>
+
+        <!-- Confirm dialog -->
+        <dialog id="confirm-dialog">
+            <form method="dialog">
+                <p>Do you confirm this?</p>
+                <div>
+                    <button value="false">Cancel</button>
+                    <button value="true">Confirm</button>
+                </div>
+            </form>
+        </dialog>
+
+        <!-- Prompt dialog -->
+        <dialog id="prompt-dialog">
+            <form method="dialog">
+                <p>What is your name?</p>
+                <input id="prompt-input" name="prompt-input" type="text" value="">
+                <div>
+                    <button value="false">Cancel</button>
+                    <button id="prompt-ok" value="true">Ok</button>
+                </div>
+            </form>
+        </dialog>
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
