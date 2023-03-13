@@ -5,9 +5,7 @@ function init() {
     let getBtn = document.getElementById("get");
     let putBtn = document.getElementById("put");
     let deleteBtn = document.getElementById("delete");
-
     let output = document.getElementById("response");
-
     let articleDate = document.getElementById("date");
     let date = new Date().toISOString();
     articleDate.value = date.substring(0, 10);
@@ -140,14 +138,14 @@ function collectData() {
     let articleID = document.getElementById("id");
     let articleName = document.getElementById("article_name");
     let articleBody = document.getElementById("article_body");
-
+    let articleDate = document.getElementById("date");
 
 
     let data = {
         "id": articleID.value,
         "article_name": articleName.value,
         "article_body": articleBody.value,
-        "date": articleDate
+        "date": articleDate.value
     };
 
     return data;
