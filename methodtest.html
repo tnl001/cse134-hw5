@@ -14,10 +14,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Home</title>
+    <title>Method Test</title>
     <script type="module" src="js/navBar.js"></script>
+    <script type="module" src="js/methodtest.js"></script>
     <style></style>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/methodtest.css">
 </head>
 
 <body>
@@ -36,15 +38,35 @@
             <a href="/methodtest.html">HTTPMethods</a>
             <!-- <a href="/experiments.html">Experiments</a> -->
         </nav>
-        <h1 id="home-header">Welcome! 👋</h1>
+        <h1>Method Test</h1>
     </header>
 
-    <main id="home-main" style="text-align: left;">
-        <p id="home-par">
-            My name is Tai and I'm currently a senior at University of California, San Diego. <br>
-            <a id="learn-more" href="/about.html">More about me</a>
-        </p>
-        <img id="home-img" src="pics/home-img.jpg" alt="Snow Image">
+    <main>
+        <form>
+            <div>
+                <label for="id">ID: </label>
+                <input type="number" id="id" name="id">
+            </div>
+            <div>
+                <label for="article_name">Article Name: </label>
+                <input type="text" id="article_name" name="article_name">
+            </div>
+            <div>
+                <label for="article_body">Article Body: </label>
+                <textarea id="article_body" name="article_body"></textarea>
+            </div>
+            <div>
+                <label for="date">Date: </label>
+                <input type="date" id="date" name="date" readonly>
+            </div>
+            <div>
+                <button id="post">postBtn</button>
+                <button id="get">getBtn</button>
+                <button id="put">putBtn</button>
+                <button id="delete">deleteBtn</button>
+            </div>
+        </form>
+        <output id="response"></output>
     </main>
 
     <footer>
