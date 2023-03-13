@@ -10,3 +10,24 @@ form div {
     flex-direction: row;
     justify-content: space-between;
 }
+
+#output-data {
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 14px;
+    white-space: pre;
+}
+
+#output-data th,
+#output-data td {
+    border: 1px solid black;
+}
+
+#output-data th {
+    background-color: rgb(200, 200, 200);
+    width: 20%;
+}
+
+#output-data td {
+    width: 100px;
+}
