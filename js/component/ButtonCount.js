@@ -12,7 +12,6 @@ class ButtonCount extends HTMLElement {
         btn.appendChild(clickCounter);
         btn.addEventListener("click", () => {
             clickCounter.innerHTML++;
-            console.log(clickCounter.innerHTML);
         })
 
         this.shadowRoot.appendChild(btn);
