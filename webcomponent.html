@@ -6,13 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Web Component</title>
-    <style></style>
+    <script type="module" src="js/navBar.js"></script>
     <script type="module" src="js/component/ButtonCount.js"></script>
+    <style></style>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
     <header>
-        <h1 id="home-header">Web Component</h1>
+        <div id="hamburger-nav">
+            <button id="hamburger">
+            </button>
+        </div>
+        <div id="nav-background"></div>
+        <nav id="nav-bar">
+            <a href="/index.html">Home</a>
+            <a href="/about.html">About</a>
+            <a href="/experience.html">Experience</a>
+            <a href="/projects.html">Projects</a>
+            <a href="/contacts.html">Contacts</a>
+            <a href="/methodtest.html">HTTPMethods</a>
+            <a href="/webcomponent.html">WebComponent</a>
+            <!-- <a href="/experiments.html">Experiments</a> -->
+        </nav>
+        <h1>Web Component</h1>
     </header>
 
     <main>
